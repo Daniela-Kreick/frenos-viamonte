@@ -122,8 +122,9 @@ a {
 /* ---- MAIN INDEX P/MOVIL ---- */
 @media (max-width:650px) {
     .main-index {
+        gap: 5px;
         height: 90vh;
-        font-size: 1em;
+        font-size: 0.7em;
         background-image: url(../imagenes/fondo-alternativo.jpg);
         background-size: cover;
     }
