@@ -123,7 +123,7 @@ a {
 @media (max-width:650px) {
     .main-index {
         height: 90vh;
-        font-size: 1.5em;
+        font-size: 1em;
         background-image: url(../imagenes/fondo-alternativo.jpg);
         background-size: cover;
     }
