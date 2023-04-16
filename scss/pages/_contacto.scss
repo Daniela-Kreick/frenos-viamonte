@@ -1,0 +1,22 @@
+.contacto {
+    background-image: url(../imagenes/fondo-alternativo.jpg);
+    background-size: cover;
+
+    &__titulo {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__formulario {
+        text-align: center;
+        line-height: 25px;
+        padding: 20px;
+
+        &-maps {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+    }
+}

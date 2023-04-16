@@ -1,0 +1,10 @@
+.main__index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+    background-image: url(../imagenes/fondo-alternativo.jpg);
+    background-size: cover;
+}

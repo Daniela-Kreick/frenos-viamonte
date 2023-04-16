@@ -1,0 +1,33 @@
+.main__sobre-nosotros {
+    background-image: url(../imagenes/fondo-alternativo.jpg);
+    background-size: cover;
+}
+
+.section {
+    padding: 15px;
+
+    &__presentacion {
+        padding: 15px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    &__testimonios {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 1.3rem;
+
+        &--parrafo {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+
+    &__consulta {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
