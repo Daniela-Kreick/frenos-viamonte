@@ -104,7 +104,7 @@
     flex-direction: column;
     gap: 20px;
     height: 100%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-image: url(../imagenes/fondo-alternativo.jpg);
     background-size: cover;
   }
@@ -191,6 +191,30 @@
   grid-area: productos__imagenes--img4;
 }
 
+/* ---- MAIN PRODUCTOS - PARA TABLET ---- */
+@media (min-width: 650px) and (max-width: 1000px) {
+  .productos__imgenes img {
+    width: 200px;
+  }
+  .productos__imgenes {
+    font-size: 1.2rem;
+  }
+}
+/* ---- MAIN PRODUCTOS - PARA MOVIL ---- */
+@media (max-width: 650px) {
+  .productos__imgenes {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 30px;
+  }
+  .productos__imgenes img {
+    width: 180px;
+  }
+  .productos__titulo {
+    font-size: 1.5rem;
+  }
+}
 .servicios {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
@@ -229,6 +253,18 @@
   grid-area: servicio4;
 }
 
+/* ---- MAIN SERVICIOS - PARA MOVIL ---- */
+@media (max-width: 650px) {
+  .figure-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .servicios__titulo {
+    font-size: 1.8rem;
+  }
+}
 .contacto {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;

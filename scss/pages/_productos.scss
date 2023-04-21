@@ -35,3 +35,34 @@
     }
 
 
+    /* ---- MAIN PRODUCTOS - PARA TABLET ---- */
+
+@media (min-width:650px) and (max-width:1000px) {
+    .productos__imgenes img {
+        width: 200px;
+    }
+
+    .productos__imgenes {
+        font-size: 1.2rem;
+    }
+}
+
+/* ---- MAIN PRODUCTOS - PARA MOVIL ---- */
+
+@media (max-width: 650px) {
+    .productos__imgenes {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 30px;
+    }
+
+    .productos__imgenes img {
+        width: 180px;
+    }
+
+    .productos__titulo {
+        font-size: 1.5rem;
+    }
+}
+

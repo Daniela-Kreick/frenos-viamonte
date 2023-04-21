@@ -38,3 +38,18 @@
 .servicio4 {
     grid-area: servicio4;
 }
+
+
+/* ---- MAIN SERVICIOS - PARA MOVIL ---- */
+
+@media (max-width: 650px) {
+    .figure-servicios {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .servicios__titulo {
+        font-size: 1.8rem;
+    }
+}
