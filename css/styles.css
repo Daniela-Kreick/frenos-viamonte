@@ -37,6 +37,40 @@
   font-size: 1.5rem;
 }
 
+/* ---- ENCABEZADO P/TABLET ---- */
+@media (min-width: 650px) and (max-width: 1000px) {
+  .encabezado {
+    font-size: 0.8rem;
+    padding: 5px 5px;
+    justify-content: space-around;
+  }
+  .encabezado__list {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+  .encabezado__body {
+    justify-content: space-around;
+  }
+  .encabezado__titulo {
+    font-size: 2rem;
+  }
+}
+/* ---- ENCABEZADO P/MOVIL ---- */
+@media (max-width: 650px) {
+  .encabezado__titulo {
+    display: none;
+  }
+  .encabezado__item--superior {
+    display: none;
+  }
+  .encabezado__list {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 2px;
+    font-size: 0.9em;
+  }
+}
 .footer__index {
   background: black;
   color: white;
