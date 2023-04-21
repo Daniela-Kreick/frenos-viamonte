@@ -24,6 +24,11 @@
   color: white;
 }
 
+@media (max-width: 650px) {
+  .encabezado__titulo {
+    display: none;
+  }
+}
 .footer__index {
   background: black;
   color: white;
