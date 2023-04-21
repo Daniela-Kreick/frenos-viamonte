@@ -1,6 +1,7 @@
 .contacto {
     background-image: url(../imagenes/fondo-alternativo.jpg);
     background-size: cover;
+    color: black;
 
     &__titulo {
         font-size: 2rem;
@@ -10,7 +11,7 @@
 
     &__formulario {
         text-align: center;
-        line-height: 25px;
+        line-height: 30px;
         padding: 20px;
 
         &-maps {

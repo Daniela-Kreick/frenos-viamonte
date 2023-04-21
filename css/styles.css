@@ -46,6 +46,7 @@
   align-items: center;
   padding: 10px;
   font-size: 2rem;
+  color: white;
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
 }
@@ -69,6 +70,7 @@
 
 .section {
   padding: 15px;
+  color: black;
 }
 .section__presentacion {
   padding: 15px;
@@ -110,6 +112,7 @@
 .productos {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
+  color: black;
 }
 .productos__titulo {
   padding: 30px;
@@ -185,6 +188,7 @@
 .servicios {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
+  color: black;
 }
 .servicios__titulo {
   padding: 30px;
@@ -252,6 +256,7 @@
 .contacto {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
+  color: black;
 }
 .contacto__titulo {
   font-size: 2rem;
@@ -260,7 +265,7 @@
 }
 .contacto__formulario {
   text-align: center;
-  line-height: 25px;
+  line-height: 30px;
   padding: 20px;
 }
 .contacto__formulario-maps {
