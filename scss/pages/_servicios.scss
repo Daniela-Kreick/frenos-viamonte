@@ -44,10 +44,35 @@
 
 @media (max-width: 650px) {
     .figure-servicios {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        gap: 20px;
+        padding: 30px 5px;
         justify-items: center;
-        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "servicio1"
+            "servicio2"
+            "servicio3"
+            "servicio4";
+    }
+    
+    .servicio1 {
+        grid-area: servicio1;
+    }
+    
+    .servicio2 {
+        grid-area: servicio2;
+    }
+    
+    .servicio3 {
+        grid-area: servicio3;
+    }
+    
+    .servicio4 {
+        grid-area: servicio4;
     }
     .servicios__titulo {
         font-size: 1.8rem;
