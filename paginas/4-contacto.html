@@ -5,29 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Frenos Viamonte</title>
 </head>
 
 <body>
 
-    <header class="encabezado">
-        <figure>
-            <img src="../imagenes/cartel.jpg" alt="logo de la empresa - frenos viamonte-" width="150px">
-        </figure>
-        <div class="encabezado__body">
-            <h1 class="encabezado__titulo">Frenos Viamonte</h1>
-            <nav>
-                <ul class="encabezado__list">
-                    <li><a class="encabezado__item" href="../index.html">Inicio</a></li>
-                    <li><a class="encabezado__item" href="./1-sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li><a class="encabezado__item" href="./2-productos.html">Productos</a></li>
-                    <li><a class="encabezado__item" href="./3-servicios.html">Servicios</a></li>
-                    <li><a class="encabezado__item" href="./4-contacto.html">Contacto</a></li>
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <ul>
+                    <li><a class="items" href="../index.html">Inicio</a></li>
+                    <li><a class="items" href="./1-sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a class="items" href="./2-productos.html">Productos</a></li>
+                    <li><a class="items" href="./3-servicios.html">Servicios</a></li>
+                    <li><a class="items" href="./4-contacto.html">Contacto</a></li>
+                    <li><a class="items" href="#footer-index">Contactenos</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <h3 class="encabezado__item--superior"><a class="encabezado__item--superior" href="#footer-index">Contactenos</a></h3>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <figure>
+                    <img src="../imagenes/cartel.jpg" alt="Logo de la empresa -Frenos Viamonte-" width="150px">
+                </figure>
+                    <h1 class="encabezado__titulo">Frenos Viamonte</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
     </header>
     <hr>
     <main class="contacto">
@@ -64,6 +74,8 @@
             frenosviamonte@gmail.com
         </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
