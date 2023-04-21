@@ -6,3 +6,10 @@
     line-height: 18px;
     padding: 7px;
 }
+
+/* ---- FOOTER P/MOVIL ---- */
+@media (max-width:650px) {
+    .footer__index {
+        font-size: 0.8em;
+    }
+}

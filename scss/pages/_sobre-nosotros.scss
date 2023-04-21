@@ -31,3 +31,23 @@
         font-size: 1.3rem;
     }
 }
+
+/* ---- MAIN P/ CELU (PAG 2) ---- */
+
+@media (max-width: 650px) {
+    .section {
+        font-size: 1rem;
+
+        &__presentacion {
+            font-size: 0.9rem;
+        }
+
+        &__testimonios {
+            font-size: 0.9rem;
+        }
+
+        &__consulta {
+            font-size: 0.9rem;
+        }
+    }
+}

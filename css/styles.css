@@ -68,7 +68,7 @@
     flex-direction: column;
     text-align: end;
     gap: 2px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 }
 .footer__index {
@@ -80,6 +80,12 @@
   padding: 7px;
 }
 
+/* ---- FOOTER P/MOVIL ---- */
+@media (max-width: 650px) {
+  .footer__index {
+    font-size: 0.8em;
+  }
+}
 .main__index {
   display: flex;
   flex-direction: row;
@@ -91,6 +97,18 @@
   background-size: cover;
 }
 
+/* ---- MAIN INDEX P/MOVIL ---- */
+@media (max-width: 650px) {
+  .main__index {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    font-size: 0.9rem;
+    background-image: url(../imagenes/fondo-alternativo.jpg);
+    background-size: cover;
+  }
+}
 .main__sobre-nosotros {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
@@ -121,6 +139,21 @@
   font-size: 1.3rem;
 }
 
+/* ---- MAIN P/ CELU (PAG 2) ---- */
+@media (max-width: 650px) {
+  .section {
+    font-size: 1rem;
+  }
+  .section__presentacion {
+    font-size: 0.9rem;
+  }
+  .section__testimonios {
+    font-size: 0.9rem;
+  }
+  .section__consulta {
+    font-size: 0.9rem;
+  }
+}
 .productos {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;

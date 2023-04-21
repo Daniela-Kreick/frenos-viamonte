@@ -8,3 +8,16 @@
     background-image: url(../imagenes/fondo-alternativo.jpg);
     background-size: cover;
 }
+
+/* ---- MAIN INDEX P/MOVIL ---- */
+@media (max-width:650px) {
+    .main__index {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        font-size: 0.9rem;
+        background-image: url(../imagenes/fondo-alternativo.jpg);
+        background-size: cover;
+    }
+}
