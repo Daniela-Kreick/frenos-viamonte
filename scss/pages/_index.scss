@@ -3,11 +3,41 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     font-size: 2rem;
     color: white;
     background-image: url(../imagenes/fondo-alternativo.jpg);
     background-size: cover;
+}
+
+.animacion1 {
+    animation-name: mover-bloque1;
+    animation-duration: 3s;
+}
+
+@keyframes mover-bloque1 {
+    0% {
+        translate: -400px 300px;
+    }
+
+    100% {
+        translate: 0px 0px;
+    }
+}
+
+.animacion2 {
+    animation-name: mover-bloque2;
+    animation-duration: 4s;
+}
+
+@keyframes mover-bloque2 {
+    0% {
+        translate: 300px 100px;
+    }
+
+    100% {
+        translate: 0px 0px;
+    }
 }
 
 /* ---- MAIN INDEX P/MOVIL ---- */

@@ -11,9 +11,22 @@
     gap: 10px;
     border-bottom: 2px solid rgb(87, 84, 84);
 }
+
+.items:hover {
+    color: rgb(191, 17, 17);
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(66, 62, 62);
+}
 .encabezado__titulo {
     color: white;
 }
+
+.navbar-toggler-icon:hover {
+    width: 2em;
+    height: 2em;
+}
+
+
 
 @media (max-width: 650px) {
     .encabezado__titulo {
