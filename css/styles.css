@@ -6,6 +6,11 @@
   text-decoration: none;
 }
 
+h2 {
+  font-size: rgb(219, 213, 213);
+  color: rgb(219, 213, 213);
+}
+
 * {
   margin: 0;
   padding: 0;

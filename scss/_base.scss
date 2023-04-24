@@ -5,3 +5,11 @@
     list-style: none;
     text-decoration: none;
 }
+
+$titulo-principal: 2rem;
+$titulo-principal: rgb(219, 213, 213);
+
+h2 {
+    font-size: $titulo-principal;
+    color: $titulo-principal;
+}
