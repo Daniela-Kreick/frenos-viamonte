@@ -7,8 +7,8 @@
 }
 
 h2 {
-  font-size: rgb(219, 213, 213);
-  color: rgb(219, 213, 213);
+  font-size: rgb(232, 226, 226);
+  color: rgb(232, 226, 226);
 }
 
 * {
@@ -138,7 +138,7 @@ h2 {
   font-size: 1.3rem;
 }
 
-/* ---- MAIN P/ CELU (PAG 2) ---- */
+/* ---- MAIN P/ CELU  ---- */
 @media (max-width: 650px) {
   .section {
     font-size: 1rem;
@@ -173,7 +173,7 @@ h2 {
 .card {
   width: 100%;
   margin: 20px;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
   background: white;
   border: 2px solid rgb(123, 26, 26);
@@ -181,12 +181,10 @@ h2 {
   cursor: default;
   transition: all 400ms ease;
 }
-
 .card:hover {
   box-shadow: 10px 10px 30px black;
   transform: translateY(-3%);
 }
-
 .card img {
   width: 100%;
   height: 200px;
@@ -218,7 +216,7 @@ h2 {
 .card {
   width: 100%;
   margin: 20px;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
   background: white;
   border: 2px solid rgb(123, 26, 26);
@@ -226,12 +224,10 @@ h2 {
   cursor: default;
   transition: all 400ms ease;
 }
-
 .card:hover {
   box-shadow: 10px 10px 30px black;
   transform: translateY(-3%);
 }
-
 .card img {
   width: 100%;
   height: 200px;
@@ -270,7 +266,6 @@ h2 {
 /* ---- MAIN SERVICIOS - PARA MOVIL---- */
 @media (max-width: 650px) {
   .container {
-    max-width: 380px;
     gap: 2em 5em;
     display: grid;
     justify-items: center;
