@@ -300,7 +300,9 @@ h2 {
   padding: 20px;
 }
 .contacto__formulario {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: end;
   line-height: 30px;
   padding: 20px;
 }
