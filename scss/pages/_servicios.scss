@@ -10,73 +10,97 @@
     }
 }
 
-.figure-servicios {
-    display: grid;
-    gap: 20px;
-    padding: 30px 5px;
-    justify-items: center;
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    border: 2px solid rgb(123, 26, 26);
+    box-shadow: 0px 1px 10px rgba(104, 103, 103, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 30px black;
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.contenido {
     text-align: center;
-    font-size: 1.3rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "servicio1 servicio2"
-        "servicio3 servicio4";
-}
-
-.servicio1 {
-    grid-area: servicio1;
-}
-
-.servicio2 {
-    grid-area: servicio2;
-}
-
-.servicio3 {
-    grid-area: servicio3;
-}
-
-.servicio4 {
-    grid-area: servicio4;
+    background: rgba(128, 128, 128, 0.548);
+    border-top: 2px solid rgb(123, 26, 26);
 }
 
 
-/* ---- MAIN SERVICIOS - PARA MOVIL ---- */
+/* ---- MAIN SERVICIOS - PARA TABLET ---- */
+
+@media (max-width: 1200px) {
+    .container {
+    max-width: 600px;
+    gap: 2em 5em;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: (2 1fr);
+    grid-template-rows: (2 1fr);
+    grid-template-areas: 
+    "card1 card2"
+    "card3 card4";
+}
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+}
+
+/* ---- MAIN SERVICIOS - PARA MOVIL---- */
 
 @media (max-width: 650px) {
-    .figure-servicios {
+    .container {
+        max-width: 380px;
+        gap: 2em 5em;
         display: grid;
-        gap: 20px;
-        padding: 30px 5px;
         justify-items: center;
-        text-align: center;
-        font-size: 1.3rem;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-            "servicio1"
-            "servicio2"
-            "servicio3"
-            "servicio4";
+        grid-template-columns: (1 1fr);
+        grid-template-rows: (4 1fr);
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4";
     }
-
-    .servicio1 {
-        grid-area: servicio1;
+    .card1 {
+        grid-area: card1;
     }
-
-    .servicio2 {
-        grid-area: servicio2;
+    .card2 {
+        grid-area: card2;
     }
-
-    .servicio3 {
-        grid-area: servicio3;
+    .card3 {
+        grid-area: card3;
     }
-
-    .servicio4 {
-        grid-area: servicio4;
+    .card4 {
+        grid-area: card4;
     }
-
-    .servicios__titulo {
-        font-size: 1.8rem;
     }
-}
+    
+    
