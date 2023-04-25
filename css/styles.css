@@ -124,17 +124,6 @@ h2 {
   text-align: center;
   font-size: 1.3rem;
 }
-.section__testimonios {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 1.3rem;
-}
-.section__testimonios--parrafo {
-  padding: 10px 0px;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
 .section__consulta {
   padding-top: 20px;
   text-align: center;
