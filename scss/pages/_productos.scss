@@ -43,3 +43,12 @@
     background: rgba(128, 128, 128, 0.548);
     border-top: 2px solid rgb(123, 26, 26);
 }
+
+@media (max-width: 650px) {
+
+    .productos__titulo {
+        font-size: 1.5rem;
+        padding: 20px;
+        margin: 0;
+    }
+}

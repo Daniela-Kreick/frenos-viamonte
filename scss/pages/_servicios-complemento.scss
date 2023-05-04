@@ -41,19 +41,25 @@
 }
 
 @media (max-width: 650px) {
-    
+
     .servicios__titulo {
         font-size: 1.5rem;
+        padding: 20px;
+        margin: 0;
     }
 
-    
+    .servicios-titulo {
+        font-size: 1.3rem;
+    }
+
+
     .lista-servicios-complementarios {
         display: grid;
-        grid-template-columns: (2 1fr) ;
-        grid-template-rows: (2 1fr) ;
-        grid-template-areas: 
-        "list1 list2"
-        "list3 list4";
+        grid-template-columns: (2 1fr);
+        grid-template-rows: (2 1fr);
+        grid-template-areas:
+            "list1 list2"
+            "list3 list4";
         gap: 25px;
     }
 
