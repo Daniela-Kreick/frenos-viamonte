@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -286,6 +285,10 @@ h2 {
     grid-area: card4;
   }
 }
+.lista-servicios {
+  list-style: disc;
+}
+
 .contacto {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
