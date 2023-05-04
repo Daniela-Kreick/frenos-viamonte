@@ -368,22 +368,71 @@ h2 {
   background-size: cover;
   color: black;
 }
+
 .contacto__titulo {
-  font-size: 2rem;
-  text-align: center;
-  padding: 20px;
+  font-size: 2.5rem;
 }
+
 .contacto__formulario {
-  display: flex;
-  justify-content: center;
-  text-align: end;
-  line-height: 30px;
-  padding: 20px;
+  border-radius: 15px;
+  border: 5px solid rgb(46, 45, 45);
+  width: 500px;
+  height: 35em;
+  background: rgba(128, 128, 128, 0.639);
+  display: grid;
 }
-.contacto__formulario-maps {
+.contacto__formulario-item {
+  place-self: center;
+}
+
+.contenedor-contacto {
+  padding: 80px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.contenedor-cajas {
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.caja {
+  border-radius: 15px;
+  border: 5px solid rgb(46, 45, 45);
+  width: 800px;
+  height: 370px;
+  background: rgba(128, 128, 128, 0.639);
+  display: grid;
+}
+.caja span {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(24, 22, 82);
+}
+.caja__caja2 {
+  place-self: center;
+}
+.caja__caja3 {
+  place-self: center;
+  font-size: 1.3rem;
+}
+.caja__caja3-titulo {
+  text-align: center;
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.img-contacto {
+  justify-self: center;
+}
+
+.contacto__formulario-maps {
+  margin: 0;
+  padding: 10px;
 }
 
 @media (max-width: 650px) {
