@@ -9,6 +9,8 @@ $titulo-principal: 2rem;
 $titulo-principal: rgb(232, 226, 226);
 
 h2 {
+    padding-top: 20px;
     font-size: $titulo-principal;
     color: $titulo-principal;
+    text-align: center;
 }

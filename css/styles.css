@@ -6,8 +6,10 @@
 }
 
 h2 {
+  padding-top: 20px;
   font-size: rgb(232, 226, 226);
   color: rgb(232, 226, 226);
+  text-align: center;
 }
 
 * {
@@ -289,6 +291,63 @@ h2 {
   list-style: disc;
 }
 
+.contenedor {
+  display: grid;
+}
+
+.hijo {
+  margin: auto;
+}
+
+.seccion-servicios {
+  padding: 30px;
+  gap: 50px;
+  font-size: 1.1rem;
+}
+
+.titulo-secundario {
+  text-align: center;
+}
+
+.lista-servicios-complementarios {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.lista-servicios-complementarios a {
+  text-decoration: none;
+  color: rgb(146, 26, 26);
+  border-bottom: 2px solid rgb(59, 8, 8);
+}
+
+@media (max-width: 1200px) {
+  .lista-servicios-complementarios {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 650px) {
+  .lista-servicios-complementarios {
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-rows: 2 1fr;
+    grid-template-areas: "list1 list2" "list3 list4";
+    gap: 25px;
+  }
+  .list1 {
+    grid-area: list1;
+  }
+  .list2 {
+    grid-area: list2;
+  }
+  .list3 {
+    grid-area: list3;
+  }
+  .list4 {
+    grid-area: list4;
+  }
+}
 .contacto {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
