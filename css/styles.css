@@ -328,6 +328,9 @@ h2 {
   }
 }
 @media (max-width: 650px) {
+  .servicios__titulo {
+    font-size: 1.5rem;
+  }
   .lista-servicios-complementarios {
     display: grid;
     grid-template-columns: 2 1fr;
