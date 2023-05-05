@@ -4,23 +4,68 @@
     color: black;
 }
 
-.contacto__titulo{
+.contacto__titulo {
     font-size: 2.5rem;
 }
 
-.contacto__formulario {
-        border-radius: 15px;
-        border: 5px solid rgb(46, 45, 45);
-        width: 500px;
-        height: fit-content;
-        padding-bottom: 5px;
-        background: rgba(128, 128, 128, 0.639);
-        display: grid;
+.titulo-form {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
-        &-item {
-            place-self: center;
-            font-size: 0.9rem;
-        }
+.contacto__formulario {
+    border-radius: 15px;
+    border: 5px solid rgb(46, 45, 45);
+    width: 400px;
+    height: fit-content;
+    padding-bottom: 5px;
+    background: rgba(128, 128, 128, 0.639);
+    display: grid;
+}
+
+.imput-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.itemsform {
+    padding: 0px 5px;
+    color: #202d21;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+
+    &:hover {
+        font-size: 1rem;
+        color: #7a1212;
+
+    }
+
+    &-imputs {
+        width: 390px;
+        font-size: 0.9rem;
+        padding: 0px 10px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        background-color: #EDFFF0;
+        border: 2px solid #f0faf1;
+    }
+}
+
+.boton-contacto {
+    font-size: 1rem;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
+    width: 390px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #54ae2b;
+        color: rgb(255, 255, 255);
+    }
 }
 
 .contenedor-contacto {
@@ -66,7 +111,7 @@
             align-self: center;
         }
     }
-    
+
 }
 
 .tarjetas-mapa {
@@ -82,10 +127,10 @@
     justify-self: center;
 }
 
-.contacto__formulario-maps{
+.contacto__formulario-maps {
     margin: auto;
     padding: 10px;
-    
+
 
 }
 
@@ -97,13 +142,17 @@
     }
 
     .contenedor-contacto {
-    display: grid;
+        display: grid;
     }
 
     .contacto__formulario {
         width: 600px;
         height: fit-content;
         margin: auto;
+    }
+
+    .itemsform-imputs {
+        width: 590px;
     }
 
     .tarjetas {
@@ -132,6 +181,10 @@
     .contacto__formulario {
         width: fit-content;
         margin: auto;
+    }
+
+    .itemsform-imputs {
+        width: 300px;
     }
 
     .tarjetas {

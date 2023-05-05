@@ -404,18 +404,60 @@ h2 {
   font-size: 2.5rem;
 }
 
+.titulo-form {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .contacto__formulario {
   border-radius: 15px;
   border: 5px solid rgb(46, 45, 45);
-  width: 500px;
+  width: 400px;
   height: fit-content;
   padding-bottom: 5px;
   background: rgba(128, 128, 128, 0.639);
   display: grid;
 }
-.contacto__formulario-item {
-  place-self: center;
+
+.imput-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.itemsform {
+  padding: 0px 5px;
+  color: #202d21;
   font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.itemsform:hover {
+  font-size: 1rem;
+  color: #7a1212;
+}
+.itemsform-imputs {
+  width: 390px;
+  font-size: 0.9rem;
+  padding: 0px 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  background-color: #EDFFF0;
+  border: 2px solid #f0faf1;
+}
+
+.boton-contacto {
+  font-size: 1rem;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94c;
+  box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
+  width: 390px;
+  cursor: pointer;
+}
+.boton-contacto:hover {
+  background-color: #54ae2b;
+  color: rgb(255, 255, 255);
 }
 
 .contenedor-contacto {
@@ -490,6 +532,9 @@ h2 {
     height: fit-content;
     margin: auto;
   }
+  .itemsform-imputs {
+    width: 590px;
+  }
   .tarjetas {
     width: 400px;
     padding: 5px;
@@ -511,6 +556,9 @@ h2 {
   .contacto__formulario {
     width: fit-content;
     margin: auto;
+  }
+  .itemsform-imputs {
+    width: 300px;
   }
   .tarjetas {
     width: 280px;

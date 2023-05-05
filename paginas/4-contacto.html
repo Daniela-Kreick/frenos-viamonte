@@ -53,51 +53,46 @@
 
             <div class="contenedor-contacto">
                 <div class="contacto__formulario">
-                    <h3 class="tarjetas__card3-titulo">Contactenos</h3>
-                    <form class="contacto__formulario-item" action="">
-                        <label for="Nombre">Nombre:</label>
-                        <input id="Nombre" type="text" placeholder="Nombre y Apellido">
-                        <br>
+                    <form action="">
+                        <h3 class="titulo-form">TURNOS / COTIZACIÓN</h3>
+                        <div class="imput-group">
+                            <label class="itemsform" for="name">Nombre</label>
+                            <input class="itemsform-imputs" type="text" name="name" id="name" placeholder="Nombre">
 
-                        <label for="Tel-Cel">Teléfono:</label>
-                        <input id="Tel-Cel" type="text" placeholder="Tel / Cel">
-                        <br>
+                            <label class="itemsform" for="phone">Teléfono</label>
+                            <input class="itemsform-imputs" type="tel" name="phone" id="phone" placeholder="Teléfono">
 
-                        <label for="E-mail">E-mail:</label>
-                        <input id="E-mail" type="E-mail" placeholder="name@example.com">
-                        <br>
+                            <label class="itemsform" for="email">Email</label>
+                            <input class="itemsform-imputs" type="email" name="email" id="email" placeholder="Email">
 
-                        <label for="Mensaje-Consulta">Mensaje / Consulta:</label>
-                        <textarea id="Mensaje-Consulta" name="Mensaje/Consulta" cols="30" rows="10"
-                            placeholder="Mensaje"></textarea>
-                        <br>
-                        <input class="boton" type="submit" value="Enviar">
-                        <input class="boton" type="reset" value="Borrar">
-                        <br>
+                            <label class="itemsform" for="opciones">Motivo:</label>
+                            <select class="itemsform-imputs" name="opciones" id="opciones">
+                                <option value="Otro">Otro</option>
+                                <option value="Revisión">Revisión</option>
+                                <option value="Sustitución de bomba">Sustitución de bomba</option>
+                                <option value="Cambio de pastillas">Cambio de pastillas</option>
+                                <option value="Rectificado/encintado campanas">Encintado de patines</option>
+                                <option value="Rectificado de discos">Rectificado de discos y/o campanas</option>
+                                <option value="Cambio/Reparación de Servo">Cambio/Reparación de Servo</option>
+                            </select>
+
+                            <label class="itemsform" for="Message">Mensaje</label>
+                            <textarea class="itemsform-imputs" name="Message" id="Message" cols="30" rows="5"
+                                placeholder="Mensaje"></textarea>
+
+                            <input class="itemsform-imputs boton-contacto" type="submit" value="Enviar">
+                            <input class="itemsform-imputs boton-contacto" type="submit" value="Borrar">
+                        </div>
                     </form>
                 </div>
                 <div>
                     <figure>
-                        <img class="imagen-contacto" src="../imagenes/trabajando.png" alt="Dueño rectificando" width="300px">
+                        <img class="imagen-contacto" src="../imagenes/trabajando.png" alt="Dueño rectificando"
+                            width="330px">
                     </figure>
                 </div>
             </div>
             <div class="contenedor-tarjetas">
-                <div class="tarjetas">
-                    <h4 class="tarjetas__card3-titulo">LLAMADAS / WHATSAPP</h4>
-                    <span><strong>3517897564</strong></span>
-                    <img class="img-contacto" src="../imagenes/llamada.png" alt="" width="180px">
-                </div>
-                <div class="tarjetas-mapa">
-                    <div class="tarjetas__card2">
-                        <figure class="contacto__formulario-maps">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.497718510939!2d-64.17187298542908!3d-31.40041040262017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432980d16c578fd%3A0xb316433eec682719!2sGral.%20Juan%20Jos%C3%A9%20Viamonte%201455%2C%20X5004AVK%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1680994707466!5m2!1ses-419!2sar"
-                                width="350" height="270" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </figure>
-                    </div>
-                </div>
                 <div class="tarjetas">
                     <div class="tarjetas__card3">
                         <h4 class="tarjetas__card3-titulo">HORARIOS</h4>
@@ -118,13 +113,28 @@
                                 Viernes: 8hs a 18hs
                             </li>
                             <li>
-                                Sábado:<strong>Cerrado</strong>
+                                Sábado:<strong> Cerrado</strong>
                             </li>
                             <li>
-                                Domingo:<strong>Cerrado</strong>
+                                Domingo:<strong> Cerrado</strong>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="tarjetas-mapa">
+                    <div class="tarjetas__card2">
+                        <figure class="contacto__formulario-maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.497718510939!2d-64.17187298542908!3d-31.40041040262017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432980d16c578fd%3A0xb316433eec682719!2sGral.%20Juan%20Jos%C3%A9%20Viamonte%201455%2C%20X5004AVK%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1680994707466!5m2!1ses-419!2sar"
+                                width="350" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </figure>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <h4 class="tarjetas__card3-titulo">LLAMADAS / WHATSAPP</h4>
+                    <span><strong>3517897564</strong></span>
+                    <img class="img-contacto" src="../imagenes/llamada.png" alt="" width="180px">
                 </div>
             </div>
 
