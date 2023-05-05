@@ -3,39 +3,99 @@
     background-size: cover;
 }
 
-.section {
+.section__presentacion {
     padding: 15px;
-    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+}
 
-    &__presentacion {
-        padding: 15px;
-        text-align: center;
-        font-size: 1.3rem;
-    }
+.titulo-galeria {
+    font-size: 3rem;
+    color: rgb(17, 17, 53);
+    text-decoration-line: underline;
+}
 
-    &__consulta {
-        padding-top: 20px;
-        text-align: center;
-        font-size: 1.3rem;
-    }
+.galeria {
+    padding: 40px 20px;
+    gap: 10px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: (3 1fr);
+    grid-template-rows: (4 1fr);
+    grid-template-areas:
+        "uno dos tres"
+        "cuatro cinco seis"
+        "siete ocho nueve"
+        "diez once doce";
+}
+
+.uno {
+    grid-area: uno;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.siete {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+.nueve {
+    grid-area: nueve;
+}
+
+.diez {
+    grid-area: diez;
+}
+
+.once {
+    grid-area: once;
+}
+
+.doce {
+    grid-area: doce;
+}
+
+
+.img-galeria {
+    background-color: rgba(25, 18, 87, 0.397);
+    border: 3px solid rgb(4, 8, 39);
+    width: 330px;
+    height: 350px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ---- MAIN P/ CELU  ---- */
 
 @media (max-width: 650px) {
-    .section {
-        font-size: 1rem;
 
-        &__presentacion {
-            font-size: 0.9rem;
-        }
-
-        &__testimonios {
-            font-size: 0.9rem;
-        }
-
-        &__consulta {
-            font-size: 0.9rem;
-        }
+    .section__presentacion {
+        padding: 15px;
+        text-align: center;
+        font-size: 1.3rem;
     }
 }
