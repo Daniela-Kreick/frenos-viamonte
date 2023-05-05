@@ -61,9 +61,12 @@ h2 {
     font-size: 0.8em;
   }
 }
-.btn {
-  border: 4px black;
-  border-radius: 20px;
+.boton {
+  padding: 3px;
+  width: 50px;
+  height: fit-content;
+  border: 3px black;
+  border-radius: 10px;
   border-style: double;
   background: rgb(77, 77, 77);
   color: white;
@@ -377,12 +380,14 @@ h2 {
   border-radius: 15px;
   border: 5px solid rgb(46, 45, 45);
   width: 500px;
-  height: 35em;
+  height: fit-content;
+  padding-bottom: 5px;
   background: rgba(128, 128, 128, 0.639);
   display: grid;
 }
 .contacto__formulario-item {
   place-self: center;
+  font-size: 0.9rem;
 }
 
 .contenedor-contacto {
@@ -393,37 +398,46 @@ h2 {
   gap: 30px;
 }
 
-.contenedor-cajas {
+.contenedor-tarjetas {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   gap: 30px;
 }
 
-.caja {
+.tarjetas {
   border-radius: 15px;
   border: 5px solid rgb(46, 45, 45);
   width: 800px;
-  height: 370px;
+  height: 300px;
   background: rgba(128, 128, 128, 0.639);
   display: grid;
 }
-.caja span {
+.tarjetas span {
   text-align: center;
   font-size: 1.8rem;
   color: rgb(24, 22, 82);
 }
-.caja__caja2 {
+.tarjetas__card2 {
   place-self: center;
 }
-.caja__caja3 {
+.tarjetas__card3 {
   place-self: center;
   font-size: 1.3rem;
 }
-.caja__caja3-titulo {
+.tarjetas__card3-titulo {
   text-align: center;
   padding-bottom: 10px;
   align-self: center;
+}
+
+.tarjetas-mapa {
+  border-radius: 15px;
+  border: 5px solid rgb(46, 45, 45);
+  width: 800px;
+  height: 300px;
+  background: rgba(128, 128, 128, 0.639);
+  display: grid;
 }
 
 .img-contacto {
@@ -431,15 +445,48 @@ h2 {
 }
 
 .contacto__formulario-maps {
-  margin: 0;
+  margin: auto;
   padding: 10px;
 }
 
+/* --- adaptacion tablet --- */
+@media (max-width: 1200px) {
+  .imagen-contacto {
+    display: none;
+  }
+  .contenedor-contacto {
+    display: grid;
+  }
+  .contacto__formulario {
+    width: 600px;
+    height: fit-content;
+    margin: auto;
+  }
+  .tarjetas {
+    width: 400px;
+    padding: 5px;
+  }
+  .tarjetas-mapa {
+    display: none;
+  }
+}
 @media (max-width: 650px) {
   .contacto__titulo {
     font-size: 1.5rem;
     padding: 20px;
     margin: 0;
+  }
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto__formulario {
+    width: fit-content;
+    margin: auto;
+  }
+  .tarjetas {
+    width: fit-content;
+    margin: auto;
   }
 }
 

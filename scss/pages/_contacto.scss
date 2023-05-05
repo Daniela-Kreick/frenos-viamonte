@@ -12,12 +12,14 @@
         border-radius: 15px;
         border: 5px solid rgb(46, 45, 45);
         width: 500px;
-        height: 35em;
+        height: fit-content;
+        padding-bottom: 5px;
         background: rgba(128, 128, 128, 0.639);
         display: grid;
 
         &-item {
             place-self: center;
+            font-size: 0.9rem;
         }
 }
 
@@ -29,18 +31,18 @@
     gap: 30px;
 }
 
-.contenedor-cajas {
+.contenedor-tarjetas {
     padding: 20px;
     display: flex;
     justify-content: space-around;
     gap: 30px;
 }
 
-.caja {
+.tarjetas {
     border-radius: 15px;
     border: 5px solid rgb(46, 45, 45);
     width: 800px;
-    height: 370px;
+    height: 300px;
     background: rgba(128, 128, 128, 0.639);
     display: grid;
 
@@ -50,11 +52,11 @@
         color: rgb(24, 22, 82);
     }
 
-    &__caja2 {
+    &__card2 {
         place-self: center;
     }
 
-    &__caja3 {
+    &__card3 {
         place-self: center;
         font-size: 1.3rem;
 
@@ -67,13 +69,51 @@
     
 }
 
+.tarjetas-mapa {
+    border-radius: 15px;
+    border: 5px solid rgb(46, 45, 45);
+    width: 800px;
+    height: 300px;
+    background: rgba(128, 128, 128, 0.639);
+    display: grid;
+}
+
 .img-contacto {
     justify-self: center;
 }
 
 .contacto__formulario-maps{
-    margin: 0;
+    margin: auto;
     padding: 10px;
+    
+
+}
+
+/* --- adaptacion tablet --- */
+
+@media (max-width: 1200px) {
+    .imagen-contacto {
+        display: none;
+    }
+
+    .contenedor-contacto {
+    display: grid;
+    }
+
+    .contacto__formulario {
+        width: 600px;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .tarjetas {
+        width: 400px;
+        padding: 5px;
+    }
+
+    .tarjetas-mapa {
+        display: none;
+    }
 }
 
 @media (max-width: 650px) {
@@ -83,4 +123,20 @@
         padding: 20px;
         margin: 0;
     }
+
+    .contenedor-tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto__formulario {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .tarjetas {
+        width: fit-content;
+        margin: auto;
+    }
+
 }
