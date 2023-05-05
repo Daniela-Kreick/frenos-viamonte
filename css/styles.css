@@ -228,20 +228,62 @@ h2 {
 .img-galeria {
   background-color: rgba(25, 18, 87, 0.397);
   border: 3px solid rgb(4, 8, 39);
-  width: 330px;
-  height: 350px;
+  width: 20em;
+  height: 22em;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* ---- MAIN P/ TABLET  ---- */
+@media (max-width: 1000px) {
+  .galeria {
+    padding: 40px 20px;
+    gap: 10px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 2 1fr;
+    grid-template-rows: 6 1fr;
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve diez" "once doce";
+  }
+}
 /* ---- MAIN P/ CELU  ---- */
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .section__presentacion {
     padding: 15px;
     text-align: center;
     font-size: 1.3rem;
+  }
+  .galeria {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2 1fr;
+    grid-template-rows: 12 1fr;
+    grid-template-areas: "uno vacio" "dos vacio" "tres vacio" "cuatro vacio" "cinco vacio" "seis vacio" "siete vacio" "ocho vacio" "nueve vacio" "diez vacio" "once vacio" "doce vacio";
+  }
+  .uno img,
+  .tres img,
+  .cuatro img,
+  .cinco img,
+  .ocho img,
+  .doce img {
+    width: 200px;
+  }
+  .dos img,
+  .siete img,
+  .nueve img,
+  .diez img,
+  .once img {
+    width: 180px;
+  }
+  .seis img {
+    width: 150px;
+  }
+  .img-galeria {
+    width: 15em;
+    height: 16em;
+    border-radius: 20px;
   }
 }
 .productos {
@@ -382,6 +424,9 @@ h2 {
   }
   .card4 {
     grid-area: card4;
+  }
+  .card {
+    width: 270px;
   }
 }
 .lista-servicios {
