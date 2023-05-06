@@ -336,6 +336,54 @@ h2 {
     margin: 0;
   }
 }
+.carta-box {
+  margin-right: 10px;
+  margin-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 255px;
+  height: 246px;
+  position: relative;
+  perspective: 1000px;
+  border: 2px solid black;
+}
+
+.carta-box:hover .carta {
+  transform: rotateY(180deg);
+}
+
+.carta {
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.cara {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.cara h3 {
+  padding: 4px;
+  background-color: rgb(154, 151, 151);
+}
+
+.cara.detras {
+  transform: rotateY(180deg);
+}
+
+.detras p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+}
+.subtitulo-tipos {
+  font-size: 1rem;
+}
+
 .servicios {
   background-image: url(../imagenes/fondo-alternativo.jpg);
   background-size: cover;
