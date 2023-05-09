@@ -351,6 +351,20 @@ h2 {
   display: none;
 }
 
+.next-pag {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.next-pag a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.next-pag a:hover {
+  color: black;
+}
+
 .img-prod1 {
   display: flex;
   flex-direction: column;
