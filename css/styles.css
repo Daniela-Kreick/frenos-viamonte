@@ -337,13 +337,19 @@ h2 {
   }
 }
 .carta-box {
+  background: linear-gradient(to bottom left, rgb(138, 18, 18), rgb(0, 0, 0));
   margin: auto;
   text-align: center;
-  width: 255px;
-  height: 246px;
+  width: 304px;
+  height: 316px;
   position: relative;
   perspective: 1000px;
   border: 2px solid black;
+}
+
+.img-prod1 {
+  display: flex;
+  flex-direction: column;
 }
 
 .carta-box:hover .carta {
@@ -356,12 +362,14 @@ h2 {
 }
 
 .cara {
+  display: grid;
+  justify-content: space-evenly;
   position: absolute;
   backface-visibility: hidden;
 }
 .cara h3 {
-  padding: 4px;
-  background-color: rgb(154, 151, 151);
+  color: white;
+  padding-top: 5px;
 }
 
 .cara.detras {
@@ -369,14 +377,19 @@ h2 {
 }
 
 .detras p {
-  margin-bottom: 0;
+  color: white;
+  margin-top: 5px;
+  margin-right: 45px;
+  text-align: start;
   font-size: 0.9rem;
 }
 
 .subtitulo {
+  color: white;
   font-size: 1.2rem;
 }
 .subtitulo-tipos {
+  color: white;
   font-size: 1rem;
 }
 
@@ -456,11 +469,14 @@ h2 {
   }
   .carta-box {
     width: 300px;
-    height: 270px;
+    height: 316px;
   }
   .carta-box img {
     width: 295px;
     height: 230px;
+  }
+  .cara h3 {
+    padding-top: 15px;
   }
 }
 .servicios {
