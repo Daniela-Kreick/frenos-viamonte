@@ -1,0 +1,100 @@
+.galeria-cilindros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "cil1 cil2"
+        "cil3 cil4"
+        "cil5 cil6";
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.cil1 {
+    grid-area: cil1;
+}
+
+.cil2 {
+    grid-area: cil2;
+}
+
+.cil3 {
+    grid-area: cil3;
+}
+
+.cil4 {
+    grid-area: cil4;
+}
+
+.cil5 {
+    grid-area: cil5;
+}
+
+.cil6 {
+    grid-area: cil6;
+}
+
+.cilindros {
+    display: inline-block;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #353232;
+    position: relative;
+}
+
+.cilindros-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cilindros-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4779;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+    line-height: 50px;
+}
+
+.cilindros:hover .cilindros-body {
+    right: 0;
+}
+
+.cilindros-title {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.cilindros-sub-title {
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.cilindros-info {
+    font-size: 0.9rem;
+    line-height: 15px;
+    margin: 20px 0;
+}
+
+@media (max-width: 650px) {
+    .galeria-cilindros {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
