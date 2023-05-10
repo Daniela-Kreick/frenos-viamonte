@@ -1,4 +1,6 @@
 .carta-box {
+    border-radius: 20px;
+    overflow: hidden;
     background: linear-gradient(to bottom left, rgb(138, 18, 18), rgb(0, 0, 0));
     margin: auto;
     text-align: center;
@@ -6,7 +8,7 @@
     height: 316px;
     position: relative;
     perspective: 1000px;
-    border: 2px solid black;
+    border: 4px solid black;
 }
 
 .link-prod a {
