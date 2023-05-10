@@ -52,7 +52,8 @@ h2 {
   text-align: center;
   font-size: 1rem;
   line-height: 18px;
-  padding: 7px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 /* ---- FOOTER P/MOVIL ---- */
@@ -417,8 +418,8 @@ h2 {
   padding-top: 20px;
   padding-bottom: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "col1 col2 col3" "col4 col5 col6" "col7 col8 col9" "col10 col1 col12";
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: "col1 col2 col3" "col4 col5 col6" "col7 col8 col9" "col10 col11 col12" "col13 col4 col15" "col16 col17 col18" "col19 col20 col21" "col22 col23 col24";
 }
 
 .carta1 {
@@ -469,6 +470,54 @@ h2 {
   grid-area: col12;
 }
 
+.carta13 {
+  grid-area: col13;
+}
+
+.carta14 {
+  grid-area: col14;
+}
+
+.carta15 {
+  grid-area: col15;
+}
+
+.carta16 {
+  grid-area: col16;
+}
+
+.carta17 {
+  grid-area: col17;
+}
+
+.carta18 {
+  grid-area: col18;
+}
+
+.carta19 {
+  grid-area: col19;
+}
+
+.carta20 {
+  grid-area: col20;
+}
+
+.carta21 {
+  grid-area: col21;
+}
+
+.carta22 {
+  grid-area: col22;
+}
+
+.carta23 {
+  grid-area: col23;
+}
+
+.carta24 {
+  grid-area: col24;
+}
+
 @media (max-width: 1000px) {
   .contenedor-cartas {
     display: grid;
@@ -476,8 +525,8 @@ h2 {
     padding-top: 20px;
     padding-bottom: 30px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "col1 col2" "col3 col4" "col5 col6" "col7 col8" "col9 col10" "col1 col12";
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: "col1 col2" "col3 col4" "col5 col6" "col7 col8" "col9 col10" "col1 col12" "col13 col4" "col15 col16" "col17 col18" "col19 col20" "col21 col22" "col23 col24";
   }
   .link-prod {
     display: flex;
