@@ -597,7 +597,6 @@ h2 {
 }
 
 .cilindros {
-  display: inline-block;
   width: 300px;
   border-radius: 20px;
   overflow: hidden;
@@ -607,8 +606,6 @@ h2 {
 
 .cilindros-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   border-radius: 15px;
 }
 
