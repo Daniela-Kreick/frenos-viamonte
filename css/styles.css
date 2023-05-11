@@ -150,6 +150,12 @@ footer {
   height: 100vh;
 }
 
+.footer-index2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* ---- MAIN INDEX P/MOVIL ---- */
 @media (max-width: 650px) {
   .main__index {
