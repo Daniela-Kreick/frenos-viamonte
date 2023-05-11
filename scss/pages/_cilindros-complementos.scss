@@ -94,13 +94,6 @@
     padding: 20px;
 }
 
-@media (max-width: 650px) {
-    .galeria-cilindros {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-}
 
 @media (max-width: 1000px) {
     .galeria-cilindros {
@@ -111,5 +104,13 @@
             "cil1 cil2"
             "cil3 cil4"
             "cil5 cil6";
+    }
+}
+
+@media (max-width: 650px) {
+    .galeria-cilindros {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
     }
 }
