@@ -1,14 +1,9 @@
-.productos {
-    background-image: url(../imagenes/fondo-alternativo.jpg);
-    background-size: cover;
-    color: black;
-
-    &__titulo {
-        padding: 30px;
-        text-align: center;
-        font-size: 2.5rem;
-    }
+.productos__titulo {
+    padding: 30px;
+    text-align: center;
+    font-size: 2.5rem;
 }
+
 
 .container {
     width: 100%;

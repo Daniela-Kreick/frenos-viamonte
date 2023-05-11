@@ -1,14 +1,9 @@
-.servicios {
-    background-image: url(../imagenes/fondo-alternativo.jpg);
-    background-size: cover;
-    color: black;
-
-    &__titulo {
-        padding: 30px;
-        text-align: center;
-        font-size: 2.5rem;
-    }
+.servicios__titulo {
+    padding: 30px;
+    text-align: center;
+    font-size: 2.5rem;
 }
+
 
 .container {
     width: 100%;
@@ -39,6 +34,7 @@
 }
 
 .contenido {
+    height: 100%;
     text-align: center;
     background: rgba(128, 128, 128, 0.548);
     border-top: 2px solid rgb(123, 26, 26);

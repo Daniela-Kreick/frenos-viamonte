@@ -12,6 +12,44 @@ h2 {
   text-align: center;
 }
 
+/*--------------- fondo de pantalla ---------------------*/
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #060404 50%, rgb(92, 0, 0) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+header {
+  border-bottom: 20px solid white;
+}
+
+footer {
+  border-top: 20px solid white;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -109,36 +147,9 @@ h2 {
   padding: 20px;
   font-size: 2rem;
   color: white;
-  background-image: url(../imagenes/fondo-alternativo.jpg);
-  background-size: cover;
+  height: 100vh;
 }
 
-.animacion1 {
-  animation-name: mover-bloque1;
-  animation-duration: 3s;
-}
-
-@keyframes mover-bloque1 {
-  0% {
-    translate: -400px 300px;
-  }
-  100% {
-    translate: 0px 0px;
-  }
-}
-.animacion2 {
-  animation-name: mover-bloque2;
-  animation-duration: 4s;
-}
-
-@keyframes mover-bloque2 {
-  0% {
-    translate: 300px 100px;
-  }
-  100% {
-    translate: 0px 0px;
-  }
-}
 /* ---- MAIN INDEX P/MOVIL ---- */
 @media (max-width: 650px) {
   .main__index {
@@ -147,24 +158,18 @@ h2 {
     gap: 20px;
     height: 100%;
     font-size: 1rem;
-    background-image: url(../imagenes/fondo-alternativo.jpg);
-    background-size: cover;
   }
 }
-.main__sobre-nosotros {
-  background-image: url(../imagenes/fondo-alternativo.jpg);
-  background-size: cover;
-}
-
 .section__presentacion {
   padding: 15px;
   text-align: center;
   font-size: 1.3rem;
+  color: rgb(225, 200, 200);
 }
 
 .titulo-galeria {
   font-size: 3rem;
-  color: rgb(17, 17, 53);
+  color: rgb(21, 21, 62);
   text-decoration-line: underline;
 }
 
@@ -286,11 +291,6 @@ h2 {
     height: 16em;
     border-radius: 20px;
   }
-}
-.productos {
-  background-image: url(../imagenes/fondo-alternativo.jpg);
-  background-size: cover;
-  color: black;
 }
 .productos__titulo {
   padding: 30px;
@@ -564,9 +564,9 @@ h2 {
 }
 .galeria-cilindros {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "cil1 cil2" "cil3 cil4" "cil5 cil6";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "cil1 cil2 cil3" "cil4 cil5 cil6";
   justify-items: center;
   align-items: center;
   gap: 20px;
@@ -625,7 +625,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 2s;
+  transition: 1.5s;
   line-height: 50px;
 }
 
@@ -663,10 +663,13 @@ h2 {
     gap: 25px;
   }
 }
-.servicios {
-  background-image: url(../imagenes/fondo-alternativo.jpg);
-  background-size: cover;
-  color: black;
+@media (max-width: 1000px) {
+  .galeria-cilindros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "cil1 cil2" "cil3 cil4" "cil5 cil6";
+  }
 }
 .servicios__titulo {
   padding: 30px;
@@ -701,6 +704,7 @@ h2 {
 }
 
 .contenido {
+  height: 100%;
   text-align: center;
   background: rgba(128, 128, 128, 0.548);
   border-top: 2px solid rgb(123, 26, 26);
@@ -825,12 +829,6 @@ h2 {
     grid-area: list4;
   }
 }
-.contacto {
-  background-image: url(../imagenes/fondo-alternativo.jpg);
-  background-size: cover;
-  color: black;
-}
-
 .contacto__titulo {
   font-size: 2.5rem;
 }
