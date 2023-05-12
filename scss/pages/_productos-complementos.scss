@@ -17,16 +17,20 @@
 
 .next-pag {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 20px;
     padding-bottom: 20px;
 
     & a {
         text-decoration: none;
         font-size: 2rem;
+        width: fit-content;
+        height: fit-content;
 
         &:hover {
-            color: black;
+            color: rgb(197, 10, 10);
         }
     }
 
@@ -52,6 +56,15 @@
     justify-content: space-evenly;
     position: absolute;
     backface-visibility: hidden;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #ff9d00;
+        border-radius: 5px;
+    }
 
     & h3 {
         color: white;
@@ -196,6 +209,10 @@
     grid-area: col24;
 }
 
+.detras {
+    overflow-y: scroll;
+    height: 310px;
+}
 
 
 
